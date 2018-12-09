@@ -6,7 +6,7 @@ import user from './assets/user.png';
 import PostItem from './components/PostItem/PostItem';
 class App extends Component {
   state={
-    posts:[]
+    posts:[],
   }
   componentWillMount(){
     fetch("http://starlord.hackerearth.com/insta")
