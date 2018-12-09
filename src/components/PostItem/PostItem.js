@@ -21,7 +21,6 @@ export default class PostItem extends Component {
   keyup=(e)=>{
     var key = e.which || e.keyCode;
       if (key === 13) { // 13 is enter
-        console.log(e.target.value);
         let obj={
           content:e.target.value
         }
@@ -48,7 +47,6 @@ export default class PostItem extends Component {
         return <p className="comment-items">{cmt.content}</p>
       })
     }
-    console.log("commment",comments);
     return (
       <div className="post-item--container">
         <div className="image-holder">

@@ -12,7 +12,6 @@ class App extends Component {
     fetch("http://starlord.hackerearth.com/insta")
     .then(res=>res.json())
     .then(res=>{
-      console.log(res);
       this.setState({
         posts:res
       });
