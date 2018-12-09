@@ -1,0 +1,85 @@
+.post-item--container{
+    border: 1px solid #7070703a;
+    margin: 20px 0;
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.image-holder img{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #7070703a;
+    
+}
+
+/* heart */
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .liked{
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
+    animation: fave-heart 1s steps(28);
+  }
+  @keyframes fave-heart {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2800px 0;
+    }
+  }
+  
+
+.like-count{
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.show-comments{
+    margin-top: 10px;
+    font-size: 12px;
+    text-indent: 5px;
+    color: #707070;
+    display: inline-block;
+}
+.show-comments:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment{
+    margin-top: 10px;
+    padding: 3px 6px;
+    border-bottom: 1px solid #707070;
+    width: 130px;
+    transition: width 0.3s ease;
+}
+
+.comment:focus{
+    width: 100%;
+}
+
+.comment-section{
+    min-height: 10px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.hide{
+    opacity: 0;
+    display: none;
+}
+
+.default-comment,.comment-items{
+    font-size: 14px;
+    color: #333333;
+    text-indent: 20px;
+}
